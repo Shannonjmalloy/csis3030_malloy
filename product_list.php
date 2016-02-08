@@ -19,9 +19,9 @@ include("header.php");
 
 
 	while ($row = mysqli_fetch_assoc($res)) {
-	echo $row["category_name"] . "<br/>";
+	echo "<h2>" . $row["category_name"] . "</h2>";
 	echo $row["product_name"] . "<br/>";
-	echo $row["price"] . "<br/>";
+	echo "$" . $row["price"] . "<br/>";
 	echo "Quantity Remaining: " . $row["quantity_remaining"] . "<br/>";
 	echo $row['image'] . "<br/>";	
 	echo "Description: " . $row['description'] . " </p>" . "<br/>";
