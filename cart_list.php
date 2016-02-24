@@ -16,6 +16,8 @@ include("header.php");
 
 <br/>
 <br/>
+
+<a href="category_list.php"> Keep Shopping </a> <br/> <br/>
 	
 <form action='cart_process.php' method='post'>
 

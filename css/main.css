@@ -268,12 +268,6 @@ p.index_text {
     font-weight: bold;
 }
 
-.category_name {
-    display: inline;
-    margin-right:50px;
-    text-align: center;
-    margin-top: 100px;
-}
 
 #content {
     width:100%;

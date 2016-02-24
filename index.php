@@ -4,7 +4,9 @@ include("header.php");
 
 ?>
 <div class="product_link">
-<a href="category_list.php"> Our Products </a>
+	<br/>
+	<br/>
+	<a href="category_list.php"> Our Products </a>
 </div>
 
 

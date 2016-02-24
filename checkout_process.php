@@ -12,23 +12,23 @@ $zip = $_POST["zip"];
 
 
 if ($first_name == "") { 
-$errormessage =  $errormessage . "First name was blank <br />";
+$errormessage =  $errormessage . "You forgot your name!<br />";
 }
 
 if ($address == "") {
-$errormessage =  $errormessage . "Address was blank <br />";
+$errormessage =  $errormessage . "You forgot your address <br />";
 }
 
 if ($city == "") { 
-$errormessage =  $errormessage . "City was blank <br />";
+$errormessage =  $errormessage . "You forgot your city! <br />";
 }
 
 if ($state == "") { 
-$errormessage =  $errormessage . "State was blank <br />";
+$errormessage =  $errormessage . "You forgot your state! <br />";
 }
 
 if ($zip == "") { 
-$errormessage =  $errormessage . "Zip code was blank <br />";
+$errormessage =  $errormessage . "You forgot your zip code! <br />";
 }
 
 if ($errormessage != "") {  
@@ -53,7 +53,7 @@ $zip = mysqli_real_escape_string($connection,$_POST["zip"]);
 echo "<div class='bold'>Address: </div>" . $address . "<br />";
 echo "<div class='bold'>City: </div>" . $city . "<br />";
 echo "<div class='bold'>State: </div>" . $state . "<br />";
-echo "<div class='bold'>Zip Code: </div>" . $zip . "<br />";
+echo "<div class='bold'>Zip Code: </div>" . $zip . "<br /><br/>";
 
 
 $sql = "select products.product_name, cart.quantity, products.id
@@ -76,7 +76,7 @@ while ($row = mysqli_fetch_assoc($res)) {
 include ("jwu_email.php");
 
 	$email = "Name: " . $first_name . " Shipping Address: " . $address . " ";
-	$email = $email . " " . $city . ", " . $state . " " . $zip . " ";
+	$email = $email . $city . ", " . $state . " " . $zip . " ";
 
 $sql = "select products.product_name, cart.quantity, products.id
 			FROM products
