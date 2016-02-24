@@ -21,17 +21,13 @@
 
             <div class="logo">
                 <h2>Assignment 6</h2> 
-                
             </div>
-
 
             <div class="nav">
                 <ul>
                     <li> <a href="index.php"> Home </a> </li>
-                    <li> <a href="category_list.php"> Categories </a> </li>
-
-                    
-                    
+                    <li> <a href="category_list.php"> Products </a> </li>
+                    <li> <a href="cart_list.php"> Cart </a> </li>                    
 
                 </ul>
             </div>

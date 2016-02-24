@@ -14,17 +14,15 @@ include("header.php");
  	echo $row["category_name"] . "<br /><br />" ;
 
 	$category_id = intval($_GET["category_id"]);
+	$product_id = intval($_GET["product_id"]);
 	$sql = "select * from products where category_id = $category_id ";
 	$res = mysqli_query($connection,$sql) or die(mysqli_error($connection));
 
-
 	while ($row = mysqli_fetch_assoc($res)) {
-	echo "<h2>" . $row["category_name"] . "</h2>";
+	echo "<h2>" . $row["category_name"] . "</h2> <br/>";
 	echo $row["product_name"] . "<br/>";
-	echo "$" . $row["price"] . "<br/>";
-	echo "Quantity Remaining: " . $row["quantity_remaining"] . "<br/>";
 	echo $row['image'] . "<br/>";	
-	echo "Description: " . $row['description'] . " </p>" . "<br/>";
+	echo "<a href='product_detail.php?product_id=" . $row["id"] .  "'>" .  "Click to view" . "</a> <br/>";	
 	};
 
 include("footer.php");

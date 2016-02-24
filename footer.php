@@ -7,7 +7,7 @@
 <div id="footer">
 
 <p>
-&copy; 2015 Shannon Malloy 
+&copy; 2016 Shannon Malloy 
 </p>
 
 
